@@ -1,13 +1,8 @@
 package speelcraft_mgr
 
-import "net/http"
-
 // Server represents an instance of a web server that allows clients to download the mods directly from the Minecraft
 // server's 'mods' folder.
 type Server struct {
-	// server is the internal http.Server instance.
-	server http.Server
-
 	// Path is the absolute system path to the folder containing the server executable (`.jar`) and `mods` folder.
 	Path string `json:"path"`
 
