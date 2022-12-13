@@ -14,7 +14,7 @@ import (
 // Define default options
 var opts = godog.Options{
 	Concurrency: runtime.NumCPU(),
-	Format:      "pretty",
+	Format:      "progress",
 	Paths:       []string{"features"},
 	Randomize:   -1,
 }
